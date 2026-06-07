@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlxTab7</title>
+  <script type="module" crossorigin src="/assets/main-CWHbnrtN.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-EmbY3Oc-.css">
+</head>
+<body>
+    <iframe id="background" src="../bg3d/bg3d.html"></iframe>
+
+    <div id="meta-container">
+        <section class="hud-section hero-section" aria-label="Hero">
+            <div class="hero-title-row">
+                <h1>AlxTab7</h1>
+            </div>
+            <span id="version">v3.8.1</span>
+            <img id="chiRhoImg" src="../../../res/images/chirho.png" alt="ChiRho">
+        </section>
+
+        <section class="hud-section info-section" aria-label="Date and time">
+            <div class="section-label">Info</div>
+            <div id="date"></div>
+            <div id="time-zones">
+                <div class="zone-row" data-time-zone="America/Los_Angeles">
+                    <span id="time-pt"></span>
+                    <span>PT</span>
+                </div>
+                <div class="zone-row" data-time-zone="America/Chicago">
+                    <span id="time-ct"></span>
+                    <span>CT</span>
+                </div>
+                <div class="zone-row" data-time-zone="America/New_York">
+                    <span id="time-et"></span>
+                    <span>ET</span>
+                </div>
+            </div>
+            <div id="temperature">[...]</div>
+        </section>
+
+        <section id="timer-container" class="hud-section" aria-label="Timer">
+            <div class="section-label">Timer</div>
+            <div id="timer-display">00:00</div>
+            <div id="timer-grid">
+                <button id="timer-preset-25" type="button">25:00</button>
+                <button id="timer-start" type="button">Start</button>
+                <button id="timer-reset" type="button">Reset</button>
+                <button id="timer-preset-5" type="button">5:00</button>
+                <button id="timer-clear" type="button">Clear</button>
+                <button id="timer-pause" type="button">Pause</button>
+            </div>
+        </section>
+
+        <section class="hud-section controls-section" aria-label="Controls">
+            <div class="section-label">Controls</div>
+            <div id="bg3d-row" class="control-row">
+                <div id="bg3d-status"></div>
+                <button id="toggle-3d" type="button">Deactivate</button>
+            </div>
+            <div id="hud-row" class="control-row">
+                <div id="hud-status"></div>
+                <button id="toggle-hud" type="button">Deactivate</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="terminal">
+        <div id="output"></div>
+
+        <div id="input-line">
+            <span class="prompt">AlxTab7:~ </span>
+            <input id="cmdline" type="text" autocomplete="off" spellcheck="false" autofocus />
+        </div>
+    </div>
+
+</body>
+</html>
+

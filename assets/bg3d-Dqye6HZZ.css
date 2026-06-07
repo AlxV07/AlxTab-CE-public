@@ -1,0 +1,1 @@
+html,body{margin:0;overflow:hidden;background:#000;width:100%;height:100%}canvas{display:block}.overlay{position:absolute;top:20px;left:20px;color:#fe5;font-family:monospace;letter-spacing:2px;opacity:.8;text-shadow:0 0 5px #ffee55,0 0 10px #ffee55,0 0 20px #ffee55;pointer-events:none}

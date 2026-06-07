@@ -1,0 +1,3 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";function o(){const t=document.createElement("iframe");t.width="100%",t.height="100%",t.src="./components/main/main.html",t.style.border="black",document.body.appendChild(t);let n=document.title;window.addEventListener("message",e=>{var i;e.source===t.contentWindow&&((i=e.data)==null?void 0:i.type)==="alxtab-timer-title"&&typeof e.data.title=="string"&&(n=e.data.title,document.title=n)}),chrome.runtime.onMessage.addListener(e=>{if(e.type==="update-title-msg")document.title=e.newTitle;else if(e.type==="restore-title-msg"){const i=/^\d+\. /;for(;i.test(document.title);)document.title=document.title.replace(i,"")}}),chrome.runtime.onMessage.addListener(function(e,i,d){e.action==="responseFromGPT"&&console.log(e.msg+`
+
+`)})}o();

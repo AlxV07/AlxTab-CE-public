@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "AlxTab7",
+  "description": "AlxTab Platform - Chrome Extension Interface",
+  "version": "3.8.1",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab",
+    "storage",
+    "bookmarks",
+    "tabGroups",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "chrome_url_overrides": {
+    "newtab": "src/alxtab.html"
+  },
+  "host_permissions": [
+    "*://*/*",
+    "file:///*"
+  ],
+  "commands": {
+    "move-tab-to-new-window": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "Move the current tab to a new window"
+    },
+    "undo-move-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Undo move tab to new window"
+    }
+  },
+  "icons": {
+    "16": "res/images/alxtabExtension.png",
+    "32": "res/images/alxtabExtension.png",
+    "64": "res/images/alxtabExtension.png",
+    "128": "res/images/alxtabExtension.png"
+  }
+}
