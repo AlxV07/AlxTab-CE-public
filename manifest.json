@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AlxTab7",
   "description": "AlxTab Platform - Chrome Extension Interface",
-  "version": "3.8.1",
+  "version": "3.8.2",
   "permissions": [
     "tabs",
     "scripting",

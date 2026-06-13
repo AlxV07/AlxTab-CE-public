@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>AlxTab7</title>
-  <script type="module" crossorigin src="/assets/main-CWHbnrtN.js"></script>
+  <script type="module" crossorigin src="/assets/main-BBrtOg0K.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
-  <link rel="stylesheet" crossorigin href="/assets/main-EmbY3Oc-.css">
+  <link rel="stylesheet" crossorigin href="/assets/main-B2EN3bbX.css">
 </head>
 <body>
     <iframe id="background" src="../bg3d/bg3d.html"></iframe>
@@ -15,13 +15,14 @@
             <div class="hero-title-row">
                 <h1>AlxTab7</h1>
             </div>
-            <span id="version">v3.8.1</span>
+            <span id="version">v3.8.2</span>
             <img id="chiRhoImg" src="../../../res/images/chirho.png" alt="ChiRho">
         </section>
 
         <section class="hud-section info-section" aria-label="Date and time">
-            <div class="section-label">Info</div>
+            <div class="section-label">Today</div>
             <div id="date"></div>
+            <div id="date-numeric"></div>
             <div id="time-zones">
                 <div class="zone-row" data-time-zone="America/Los_Angeles">
                     <span id="time-pt"></span>
@@ -72,6 +73,18 @@
             <span class="prompt">AlxTab7:~ </span>
             <input id="cmdline" type="text" autocomplete="off" spellcheck="false" autofocus />
         </div>
+    </div>
+
+    <div id="right-container">
+        <section id="dailies-container" class="hud-section" aria-label="Dailies">
+            <div class="section-label">Dailies</div>
+            <div id="dailies-list"></div>
+        </section>
+
+        <section id="notes-container" class="hud-section" aria-label="Notes">
+            <div class="section-label">Notes</div>
+            <div id="notes-list"></div>
+        </section>
     </div>
 
 </body>
